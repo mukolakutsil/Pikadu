@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Підключаємо normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <title>Pikadu - новий пост</title>
+</head>
+
+<body>
+    <!-- Шапка сайту -->
+    <header class="header">
+        <div class="header-wrapper">
+
+            <a href="/" class="header-logo">
+                <img class="header-logo-image" src="./img/logo.svg" alt="logo: Pikadu">
+            </a>
+
+            <nav class="header-nav">
+                <ul class="header-menu">
+                    <li class="header-menu-item"><a href="#" class="header-menu-link">Свіже</a></li>
+                    <li class="header-menu-item"><a href="#" class="header-menu-link">Найкраще</a></li>
+                    <li class="header-menu-item"><a href="#" class="header-menu-link">Горяче</a></li>
+                    <li class="header-menu-item"><a href="#" class="header-menu-link">Підписки</a></li>
+                </ul>
+            </nav>
+
+            <div class="input-group search">
+                <input type="search" name="" class="search-input" placeholder="Пошук на сайті">
+                <button class="search-button">
+                    <img src="./img/search.svg" alt="icon: search" class="search-icon">
+                </button>
+
+            </div>
+            <a href="#" class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <!-- /.header-wrapper -->
+    </header>
+
+    <div class="content">
+        <main class="posts">
+            <form action="" class="add-post">
+                <input type="text" name="post-title" class="add-title" placeholder="Зоголовок поста">
+                <textarea name="post-text" id="text" class="add-text" placeholder="Teкст вашого поста"></textarea>
+                <div class="add-buttons">
+                    <button type="submit" class="button add-button">
+                        <svg class="icon icon-fire">
+                            <use xlink:href="./img/icons.svg#fire"></use>
+                        </svg>
+                        Опублікувати пост
+                    </button>
+                    <button class="button button-outline">
+                        <svg class="icon icon-image">
+                            <use xlink:href="./img/icons.svg#image"></use>
+                          </svg>Фото
+                        </button>
+                    <button class="button button-outline">
+                        <svg class="icon icon-video">
+                            <use xlink:href="./img/icons.svg#video"></use>
+                          </svg>Відео
+                        </button>  
+                </div>
+            </form>
+        </main>
+
+        <aside class="sidebar">
+            <div class="user">
+                <a href="#" class="user-info">
+                    <img width="40" height="40" src="./img/avatar_tom.jpg" alt="photo: avatar" class="user-avatar">
+                    <span class="user-name">Tom</span>
+                </a>
+                <!-- /.user-info -->
+                <a href="#" class="exit">
+                    <svg class="icon icon-exit">
+                        <use xlink:href="./img/icons.svg#exit"></use>
+                    </svg>
+                </a>
+                <!-- /.exit -->
+            </div>
+            <!-- /.user -->
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Коментарі</a></li>
+                    <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Відповіді</a></li>
+                    <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link active">Оцінки</a></li>
+                    <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Збуружені</a></li>
+                    <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Підписники</a></li>
+                    <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Замітки</a></li>
+                    <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Ігнор-лист</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="promo"></a>
+        </aside>
+        <!-- /.sidebar -->
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
